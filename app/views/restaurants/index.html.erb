@@ -1,0 +1,8 @@
+<p><strong>'raunts</strong></p>
+<ul class="list-group shadow-sm p-1 my-2">
+  <% @restaurants.each do |restaurant| %>
+    <li class="list-group-item"><%= restaurant.name %><br /><%= restaurant.id %><br /><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+</li>
+  <% end %>
+</ul>
+<br>
